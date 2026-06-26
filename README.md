@@ -1,4 +1,3 @@
-```markdown
 # Vietnamese Social Media Sarcasm Detection
 
 This project focuses on **sarcasm detection in Vietnamese social media comments** collected from TikTok and YouTube. Unlike conventional text classification tasks that only use the comment text, this project formulates sarcasm detection as a **context-aware NLP problem**, where each comment is interpreted together with video-level context and commonsense knowledge.
@@ -126,4 +125,3 @@ Vietnamese sarcasm detection on social media remains challenging due to:
 ## Project Goal
 
 The goal of this project is not only to train a classifier, but also to build a complete data-centric NLP pipeline for Vietnamese sarcasm detection. The system combines data preprocessing, context enrichment, LLM-based labeling, model training, error analysis, and knowledge distillation to better understand how sarcasm appears in Vietnamese social media comments.
-```
