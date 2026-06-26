@@ -1,0 +1,63 @@
+<View>
+
+  <View style="margin-bottom: 15px;">
+    <Header value="📌 Video Title" size="6" style="font-weight: bold; color: #555;"/>
+    <Text name="video_title" value="$video_title"/>
+  </View>
+  
+  <View style="margin-bottom: 15px;">
+    <Header value="📝 Video Core Content" size="6" style="font-weight: bold; color: #555;"/>
+    <Text name="video_core_content" value="$video_core_content"/>
+  </View>
+  
+    <View style="margin-bottom: 15px;">
+    <Header value="📝 Video Highlight" size="6" style="font-weight: bold; color: #555;"/>
+    <Text name="video_highlight" value="$video_highlight"/>
+  </View>
+  
+  <View style="margin-bottom: 15px;">
+    <Header value="🎯 Video Target Sentiment" size="6" style="font-weight: bold; color: #555;"/>
+    <Text name="video_target_sentiment" value="$video_target_sentiment"/>
+  </View>
+  
+  <View style="margin-bottom: 15px;">
+    <Header value="🧠 Commonsense" size="6" style="font-weight: bold; color: #555;"/>
+    <Text name="commonsense" value="$commonsense"/>
+  </View>
+
+  <View style="margin-bottom: 10px;">
+    <Header value="🌐 Nền tảng" size="6" style="font-weight: bold; color: #555;"/>
+    <Text name="platform" value="$platform"/>
+  </View>
+  
+  <View style="margin-bottom: 20px; padding: 10px; background: #ffffff; border-radius: 4px;">
+    <Header value="💬 Comment" size="6" style="font-weight: bold; color: #555;"/>
+    <Text name="comment" value="$comment"/>
+</View>
+
+  <View style="margin-top: 20px; padding: 15px; border: 1px solid #e8e8e8; border-radius: 8px;">
+    <Header value="🏷️ Label cho Comment" size="4"/>
+    
+    <View style="margin-top: 10px;">
+      <Header value="📊 Sentiment Label" size="6"/>
+      <Choices name="sentiment" toName="comment" required="true" showInLine="true">
+        <Choice value="Positive" alias="Tích cực"/>
+        <Choice value="Negative" alias="Tiêu cực"/>
+        <Choice value="Neutral" alias="Trung lập"/>
+      </Choices>
+    </View>
+
+    <View style="margin-top: 10px;">
+      <Header value="🤡 Sarcasm Label" size="6"/>
+      <Choices name="sarcasm" toName="comment" required="true" showInLine="true">
+        <Choice value="Yes" alias="Có mỉa mai"/>
+        <Choice value="No" alias="Không mỉa mai"/>
+      </Choices>
+    </View>
+  </View>
+
+  <View style="margin-top: 20px;">
+    <Header value="📝 Ghi chú (nếu cần)" size="4"/>
+    <TextArea name="notes" toName="comment" placeholder="Nhập ghi chú tại đây..." rows="2"/>
+  </View>
+</View>

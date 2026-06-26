@@ -1,0 +1,6 @@
+API.env
+report/
+Project/model/distillation/unsloth_compiled_cache/
+Project/model/distillation/qwen2.5-3b-sarcasm-lora/
+Project/model/distillation/qwen2.5-7b-sarcasm-lora/
+Project/model/distillation/qwen2.5-14b-sarcasm-lora/
